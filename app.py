@@ -110,6 +110,7 @@ def main():
                                      type=["pdf", "docx"])
 
         if st.button('Process'):
+            #tesr
             with st.spinner("Processing"):
                 raw_text = ""
 
