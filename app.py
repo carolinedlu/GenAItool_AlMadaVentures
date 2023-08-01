@@ -84,7 +84,7 @@ def main():
     load_dotenv()
     #st.session_state.conversation = None
     #st.session_state.conversation = None
-    st.set_page_config(page_title='Chat with multiple Al Mada VC pdf documents',page_icon=":books:")
+    st.set_page_config(page_title='Chat with multiple Al Mada VC documents',page_icon=":books:")
 
     #adding the css 
     st.write(css,unsafe_allow_html=True)
@@ -96,7 +96,7 @@ def main():
     if "chat_history" not in st.session_state : 
          st.session_state.chat_history = None 
 
-    st.header("Chat with multiple Al Mada VC pdf documents :books: ")
+    st.header("Chat with multiple Al Mada VC documents :books: ")
     user_question = st.text_input("Ask a question about your documents:")
     
 
