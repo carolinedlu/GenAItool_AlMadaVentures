@@ -1,6 +1,6 @@
 import streamlit as st 
-from dotenv import load_dotenv
 from PyPDF2 import PdfReader
+from dotenv import load_dotenv
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.embeddings import OpenAIEmbeddings
 #HuggingFaceEmbeddings
