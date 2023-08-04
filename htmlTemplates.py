@@ -37,7 +37,7 @@ bot_template = '''
 user_template = '''
 <div class="chat-message user">
     <div class="avatar">
-        <img src="https://industries.ma/wp-content/uploads/2022/03/almada.jpg">
+        <img src="https://upload.wikimedia.org/wikipedia/fr/f/ff/Logo_Al_Mada.jpg">
     </div>    
     <div class="message">{{MSG}}</div>
 </div>
