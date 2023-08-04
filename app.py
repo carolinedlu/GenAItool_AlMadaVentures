@@ -12,9 +12,7 @@ from langchain.chains import ConversationalRetrievalChain
 from docx import Document
 import dropbox
 from htmlTemplates import css,bot_template,user_template
-
-OPEN_API_KEY = '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'
-HUGGINGFACE_API_TOKEN = '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'
+from config import OPEN_API_KEY
 
 # def connect_to_dropbox(access_token):
 #     try:
