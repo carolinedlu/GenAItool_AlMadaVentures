@@ -9,8 +9,9 @@ from langchain.vectorstores import FAISS
 from langchain.memory import ConversationBufferMemory
 from langchain.chat_models import ChatOpenAI 
 from langchain.chains import ConversationalRetrievalChain
-from docx import Document
 from lxml import etree
+
+from docx import Document
 #from docx2txt import process
 import dropbox
 from htmlTemplates import css,bot_template,user_template
