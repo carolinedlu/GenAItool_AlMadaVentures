@@ -35,9 +35,7 @@ def get_pdf_text(pdf_docs):
 def get_word_text(word_docs):
     text = ""
     for doc in word_docs:
-        document = process(doc)
-        for paragraph in document.paragraphs:
-            text += paragraph.text
+        text = process(doc)
     return text
 
 def get_text_chunks(text):
