@@ -9,8 +9,8 @@ from langchain.vectorstores import FAISS
 from langchain.memory import ConversationBufferMemory
 from langchain.chat_models import ChatOpenAI 
 from langchain.chains import ConversationalRetrievalChain
-#from docx import Document
-from docx2txt import process
+from docx import Document
+#from docx2txt import process
 import dropbox
 from htmlTemplates import css,bot_template,user_template
 from config import OPEN_API_KEY
@@ -35,8 +35,11 @@ def get_pdf_text(pdf_docs):
 def get_word_text(word_docs):
     text = ""
     for doc in word_docs:
-        text = process(doc)
+        document = Document(doc)
+        for paragraph in document.paragraphs:
+            text += paragraph.text
     return text
+
 
 def get_text_chunks(text):
     text_splitter = CharacterTextSplitter(
